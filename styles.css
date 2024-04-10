@@ -100,3 +100,28 @@ html, body {
     margin: 5px;
     background-color: rgb(146, 146, 146);
 }
+
+ul {
+    list-style: none;
+    line-height: 4px;
+}
+
+#logo {
+    width:100px;
+    height:100px;
+}
+
+#dashboard-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-img {
+    width: 100px;
+    height: 100px;
+}
+
+#welcome {
+    display: flex;
+}
