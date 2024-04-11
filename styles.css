@@ -183,7 +183,7 @@ ul {
 #projects div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: autofit(1fr 1fr 1fr);
     background-color: rgb(89, 165, 165);
 }
 
