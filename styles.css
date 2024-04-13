@@ -2,6 +2,7 @@ html, body {
     height:100%;
     width:100%;
     margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-container {
@@ -20,6 +21,7 @@ html, body {
     display: grid;
     grid-template-columns: 1pr;
     grid-template-rows: 1fr 4fr;
+    font-size: 0.95rem;
 }
 
 #header {
@@ -28,7 +30,7 @@ html, body {
     background-color: #fdfdfd;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 40px 100px;
 }
 
 #content {
@@ -118,8 +120,8 @@ ul {
 }
 
 #welcome-img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 #welcome {
@@ -135,6 +137,10 @@ ul {
     padding:10px;
 }
 
+#welcome div:nth-child(2) p , h2 {
+    margin:5px;
+}
+
 #search {
     display: flex;
     align-items: center;
@@ -142,8 +148,8 @@ ul {
 }
 
 #search img {
-    height:50px;
-    width:50px;
+    height:20px;
+    width:20px;
 }
 
 #search input {
@@ -160,8 +166,8 @@ ul {
 }
 
 #user img {
-    width: 50px;
-    height:50px;
+    width: 20px;
+    height:20px;
     margin-right:10px;
 }
 
@@ -169,8 +175,9 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 10px;
 }
 
 #controls button {
@@ -180,13 +187,53 @@ ul {
     cursor:pointer;
 }
 
-#projects div {
+#projects>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat( auto-fit, minmax(100px, 1fr) );
     background-color: rgb(89, 165, 165);
+    gap:15px;
+    margin:5px;
 }
 
-#projects div div {
+#projects>div>div {
     background-color: rgb(107, 182, 156); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding:20px;
+    border-radius: 10px;
+    border-left:8px solid rgb(192, 128, 33);
+}
+
+#projects>div>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#projects div div img {
+    width: 20px;
+    height: 20px;
+    padding:2px;
+}
+
+#projects h3 {
+    font-size: 1rem;
+    margin-top:5px;
+}
+
+#projects p {
+    font-size: 0.85rem;
+    line-height: 16px;
+    margin-top:5px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+#user h3 {
+    font-size: 1rem;
 }
