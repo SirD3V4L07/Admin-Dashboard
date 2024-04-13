@@ -40,6 +40,7 @@ html, body {
     display: grid;
     grid-template-columns: 2.8fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 20px;
 }
 
 #dashboard-title {
@@ -234,9 +235,25 @@ ul {
 }
 
 h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #user h3 {
     font-size: 1rem;
+}
+
+#announcements>div {
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    padding:6px 15px;
+}
+
+#announcements h3 {
+    font-size: 0.8rem;
+    margin-bottom:2px;
+}
+
+#announcements p {
+    font-size: 0.7rem;
+    margin:2px;
 }
