@@ -197,6 +197,11 @@ li {
     color: #eae8e6;
 }
 
+#controls button:hover {
+    background-color: #eae8e6 ;
+    color:  rgb(197, 56, 56);
+}
+
 #projects>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
