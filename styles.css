@@ -31,64 +31,61 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 100px;
+    box-shadow: 2px 1px 5px #6f6c6c;
+    z-index: 1;
 }
 
 #content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: #fdfdfd;
+    background-color: #eae8e6;
     display: grid;
     grid-template-columns: 2.8fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     gap:15px;
+    padding-top: 10px;
 }
 
 #dashboard-title {
     grid-row:1/2;
     margin:5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #menu {
     grid-row:2/3;
     margin:5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #search {
     grid-column: 1/2;
     grid-row: 1/2;
     margin:5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #user {
     grid-column: 2/3;
     grid-row: 1/2;
     margin:5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #welcome {
     grid-column: 1/2;
     grid-row: 2/3;
     margin:5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #controls {
     grid-column: 2/3;
     grid-row: 2/3;
     margin:5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #projects {
     grid-column: 1/2;
     grid-row: 1/3;
     margin: 5px;
-    background-color: rgb(146, 146, 146);
     padding-left: 10px;
 }
 
@@ -96,14 +93,12 @@ html, body {
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 5px;
-    background-color: rgb(146, 146, 146);
 }
 
 #trending {
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 5px;
-    background-color: rgb(146, 146, 146);
 }
 
 ul {
@@ -111,9 +106,17 @@ ul {
     line-height: 4px;
 }
 
+li {
+    cursor: pointer;
+}
+
+#sidebar h3:hover {
+    color:rgb(255, 52, 52);
+}
+
 #logo {
-    width:100px;
-    height:100px;
+    width:auto;
+    height:120px;
 }
 
 #dashboard-title {
@@ -133,11 +136,11 @@ ul {
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
-    padding:10px;
+    padding-left:15px;
 }
 
 #welcome div:nth-child(2) {
-    padding:10px;
+    padding:5px;
 }
 
 #welcome div:nth-child(2) p , h2 {
@@ -158,6 +161,7 @@ ul {
 #search input {
     width: 80%;
     margin-left:5px;
+    border-radius: 5px;
 }
 
 #user {
@@ -184,31 +188,33 @@ ul {
 }
 
 #controls button {
-    padding: 5px 20px;
+    padding: 4px 20px;
     border-radius: 20px;
     margin:5px;
     cursor:pointer;
+    border: 2px solid rgb(151, 36, 36);
+    background-color: rgb(197, 56, 56);
+    color: #eae8e6;
 }
 
 #projects>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat( auto-fit, minmax(100px, 1fr) );
-    background-color: rgb(89, 165, 165);
     gap:15px;
     margin:5px;
     
 }
 
 #projects>div>div {
-    background-color: rgb(240, 240, 240); 
+    background-color:#fdfdfd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     padding:20px;
     border-radius: 10px;
-    border-left:8px solid rgb(192, 128, 33);
+    border-left:8px solid #e45d5dfc;
 }
 
 #projects>div>div>div:nth-child(2) {
@@ -246,12 +252,13 @@ h2 {
 #announcements>div {
     background-color: #fdfdfd;
     border-radius: 5px;
-    padding:6px 15px;
+    padding:10px 15px;
 }
 
 #announcements h3 {
     font-size: 0.8rem;
     margin-bottom:2px;
+    margin-top: 2px;
 }
 
 #announcements p {
@@ -262,7 +269,7 @@ h2 {
 #trending>div {
     background-color: #fdfdfd;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 #trending>div>div {
@@ -291,4 +298,12 @@ h2 {
     grid-column: 2 / 3;
     margin:1px;
     font-size: 0.7rem;
+}
+
+#sidebar h3 {
+    color:#fdfdfd;
+}
+
+#menu-span {
+    padding-top: 10px;
 }
